@@ -12,8 +12,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Authorisation">
    <children>
-      <TextField layoutX="250.0" layoutY="48.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="48.0" />
-      <PasswordField layoutX="250.0" layoutY="112.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="112.0" />
+      <TextField fx:id="loginField" layoutX="250.0" layoutY="48.0" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="48.0" />
+      <PasswordField fx:id="passField" layoutX="250.0" layoutY="112.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="112.0" />
       <Label layoutX="250.0" layoutY="21.0" text="Login" AnchorPane.bottomAnchor="221.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="21.0" />
       <Label layoutX="250.0" layoutY="88.0" text="Password" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="88.0" />
       <Separator layoutX="226.0" layoutY="8.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="36.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="226.0" AnchorPane.topAnchor="0.0" />
