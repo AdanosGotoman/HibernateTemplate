@@ -31,16 +31,27 @@ public class Authorisation
             try
             {
                 ResultSet result = ConnectionManager.statement.executeQuery
-                        ("SELECT id FROM user WHERE " +
-                                "login = \'" + loginField.getText() + "\' AND" + " " +
-                                "password = \'" + passField.getText() + "\'");
+                        ("SELECT id FROM user WHERE login = \'" + loginField.getText() + "\' AND  password = \'" + passField.getText() + "\'");
 
                 if (result.next())
+                {
                     System.out.println("Your account is Director: " + result.getInt("id"));
+
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(getClass().getResource("Store.fxml"));
+
+                    Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+                    Stage stage = (Stage) signButton.getScene().getWindow();
+                    stage.close();
+
+                    stage.setTitle("Store");
+                    stage.setScene(scene);
+                    stage.show();
+                }
                 else
                     System.out.println("Not found account");
             }
-            catch (SQLException err) { err.printStackTrace(); }
+            catch (SQLException | IOException err) { err.printStackTrace(); }
         });
     }
 }

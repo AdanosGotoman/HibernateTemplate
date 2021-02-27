@@ -14,9 +14,9 @@ public class AuthorisationMain extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("Authorisation.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Registration.fxml"));
         primaryStage.setTitle("Store DataBase");
-        primaryStage.setScene(new Scene(root, 432, 259));
+        primaryStage.setScene(new Scene(root, 432, 361));
         primaryStage.show();
     }
 
