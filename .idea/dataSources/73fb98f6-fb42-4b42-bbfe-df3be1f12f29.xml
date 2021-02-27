@@ -907,261 +907,252 @@ BACKUP_ADMIN,BINLOG_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,GROUP_REPLICATIO
     <table id="282" parent="2" name="director"/>
     <table id="283" parent="2" name="fabrics"/>
     <table id="284" parent="2" name="furniture"/>
-    <table id="285" parent="2" name="manager"/>
-    <table id="286" parent="2" name="product"/>
-    <table id="287" parent="2" name="stroke"/>
-    <table id="288" parent="2" name="strokekeeper"/>
-    <table id="289" parent="2" name="strokekeeper_has_manager"/>
-    <table id="290" parent="2" name="user"/>
-    <column id="291" parent="282" name="id">
+    <table id="285" parent="2" name="listuser"/>
+    <table id="286" parent="2" name="manager"/>
+    <table id="287" parent="2" name="product"/>
+    <table id="288" parent="2" name="stroke"/>
+    <table id="289" parent="2" name="strokekeeper"/>
+    <table id="290" parent="2" name="strokekeeper_has_manager"/>
+    <table id="291" parent="2" name="user"/>
+    <column id="292" parent="282" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="292" parent="282" name="name">
+    <column id="293" parent="282" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="293" parent="282" name="surname">
+    <column id="294" parent="282" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="294" parent="282" name="phone">
+    <column id="295" parent="282" name="phone">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="295" parent="282" name="mail">
+    <column id="296" parent="282" name="mail">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="296" parent="282" name="PRIMARY">
+    <key id="297" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="297" parent="283" name="id">
+    <column id="298" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="298" parent="283" name="name">
+    <column id="299" parent="283" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="299" parent="283" name="color">
+    <column id="300" parent="283" name="color">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="300" parent="283" name="width">
+    <column id="301" parent="283" name="width">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="301" parent="283" name="height">
+    <column id="302" parent="283" name="height">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="302" parent="283" name="price">
+    <column id="303" parent="283" name="price">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="303" parent="283" name="product_id">
+    <column id="304" parent="283" name="product_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="304" parent="283" name="product_stroke_id">
+    <column id="305" parent="283" name="product_stroke_id">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="305" parent="283" name="fk_fabrics_product1_idx">
+    <index id="306" parent="283" name="fk_fabrics_product1_idx">
       <ColNames>product_id
 product_stroke_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="306" parent="283" name="PRIMARY">
+    <key id="307" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="307" parent="283" name="fk_fabrics_product1">
+    <foreign-key id="308" parent="283" name="fk_fabrics_product1">
       <ColNames>product_id
 product_stroke_id</ColNames>
       <RefTableName>product</RefTableName>
       <RefColNames>id
 stroke_id</RefColNames>
     </foreign-key>
-    <column id="308" parent="284" name="id">
+    <column id="309" parent="284" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="309" parent="284" name="name">
+    <column id="310" parent="284" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="310" parent="284" name="color">
+    <column id="311" parent="284" name="color">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="311" parent="284" name="width">
+    <column id="312" parent="284" name="width">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="312" parent="284" name="height">
+    <column id="313" parent="284" name="height">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="313" parent="284" name="price">
+    <column id="314" parent="284" name="price">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="314" parent="284" name="weight">
+    <column id="315" parent="284" name="weight">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="315" parent="284" name="type">
+    <column id="316" parent="284" name="type">
       <Position>8</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="316" parent="284" name="product_id">
+    <column id="317" parent="284" name="product_id">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="317" parent="284" name="fk_furniture_product1_idx">
+    <index id="318" parent="284" name="fk_furniture_product1_idx">
       <ColNames>product_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="318" parent="284" name="PRIMARY">
+    <key id="319" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="319" parent="284" name="fk_furniture_product1">
+    <foreign-key id="320" parent="284" name="fk_furniture_product1">
       <ColNames>product_id</ColNames>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="320" parent="285" name="id">
+    <column id="321" parent="285" name="name">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="322" parent="285" name="surname">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="323" parent="285" name="login">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="324" parent="285" name="password">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <column id="325" parent="286" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="321" parent="285" name="name">
+    <column id="326" parent="286" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="322" parent="285" name="surname">
+    <column id="327" parent="286" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="323" parent="285" name="phone">
+    <column id="328" parent="286" name="phone">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="324" parent="285" name="mail">
+    <column id="329" parent="286" name="mail">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="325" parent="285" name="user_id">
+    <column id="330" parent="286" name="user_id">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="326" parent="285" name="fk_manager_user1_idx">
+    <index id="331" parent="286" name="fk_manager_user1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="327" parent="285" name="PRIMARY">
+    <key id="332" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="328" parent="285" name="fk_manager_user1">
+    <foreign-key id="333" parent="286" name="fk_manager_user1">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="329" parent="286" name="id">
+    <column id="334" parent="287" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="330" parent="286" name="price">
+    <column id="335" parent="287" name="price">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="331" parent="286" name="stroke_id">
+    <column id="336" parent="287" name="stroke_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="332" parent="286" name="fk_product_stroke1_idx">
+    <index id="337" parent="287" name="fk_product_stroke1_idx">
       <ColNames>stroke_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="333" parent="286" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id
-stroke_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="334" parent="286" name="fk_product_stroke1">
-      <ColNames>stroke_id</ColNames>
-      <RefTableName>stroke</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="335" parent="287" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="336" parent="287" name="director_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="337" parent="287" name="fk_stroke_director1_idx">
-      <ColNames>director_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="338" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id
-director_id</ColNames>
+stroke_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="339" parent="287" name="fk_stroke_director1">
-      <ColNames>director_id</ColNames>
-      <RefTableName>director</RefTableName>
+    <foreign-key id="339" parent="287" name="fk_product_stroke1">
+      <ColNames>stroke_id</ColNames>
+      <RefTableName>stroke</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="340" parent="288" name="id">
@@ -1170,116 +1161,142 @@ director_id</ColNames>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="341" parent="288" name="name">
+    <column id="341" parent="288" name="director_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="342" parent="288" name="fk_stroke_director1_idx">
+      <ColNames>director_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="343" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+director_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="344" parent="288" name="fk_stroke_director1">
+      <ColNames>director_id</ColNames>
+      <RefTableName>director</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="345" parent="289" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="346" parent="289" name="name">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="342" parent="288" name="surname">
+    <column id="347" parent="289" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="343" parent="288" name="phone">
+    <column id="348" parent="289" name="phone">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="344" parent="288" name="mail">
+    <column id="349" parent="289" name="mail">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="345" parent="288" name="stroke_id">
+    <column id="350" parent="289" name="stroke_id">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="346" parent="288" name="fk_strokeKeeper_stroke1_idx">
+    <index id="351" parent="289" name="fk_strokeKeeper_stroke1_idx">
       <ColNames>stroke_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="347" parent="288" name="PRIMARY">
+    <key id="352" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id
 stroke_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="348" parent="288" name="fk_strokeKeeper_stroke1">
+    <foreign-key id="353" parent="289" name="fk_strokeKeeper_stroke1">
       <ColNames>stroke_id</ColNames>
       <RefTableName>stroke</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="349" parent="289" name="strokeKeeper_id">
+    <column id="354" parent="290" name="strokeKeeper_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="350" parent="289" name="strokeKeeper_stroke_id">
+    <column id="355" parent="290" name="strokeKeeper_stroke_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="351" parent="289" name="manager_id">
+    <column id="356" parent="290" name="manager_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="352" parent="289" name="fk_strokeKeeper_has_manager_strokeKeeper1_idx">
+    <index id="357" parent="290" name="fk_strokeKeeper_has_manager_strokeKeeper1_idx">
       <ColNames>strokeKeeper_id
 strokeKeeper_stroke_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="353" parent="289" name="fk_strokeKeeper_has_manager_manager1_idx">
+    <index id="358" parent="290" name="fk_strokeKeeper_has_manager_manager1_idx">
       <ColNames>manager_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="354" parent="289" name="PRIMARY">
+    <key id="359" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>strokeKeeper_id
 strokeKeeper_stroke_id
 manager_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="355" parent="289" name="fk_strokeKeeper_has_manager_strokeKeeper1">
+    <foreign-key id="360" parent="290" name="fk_strokeKeeper_has_manager_strokeKeeper1">
       <ColNames>strokeKeeper_id
 strokeKeeper_stroke_id</ColNames>
       <RefTableName>strokekeeper</RefTableName>
       <RefColNames>id
 stroke_id</RefColNames>
     </foreign-key>
-    <foreign-key id="356" parent="289" name="fk_strokeKeeper_has_manager_manager1">
+    <foreign-key id="361" parent="290" name="fk_strokeKeeper_has_manager_manager1">
       <ColNames>manager_id</ColNames>
       <RefTableName>manager</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="357" parent="290" name="id">
+    <column id="362" parent="291" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="358" parent="290" name="login">
+    <column id="363" parent="291" name="login">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="359" parent="290" name="password">
+    <column id="364" parent="291" name="password">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="360" parent="290" name="name">
+    <column id="365" parent="291" name="name">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="361" parent="290" name="surname">
+    <column id="366" parent="291" name="surname">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="362" parent="290" name="PRIMARY">
+    <key id="367" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
